@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Recruitment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>AI Recruitment Dashboard</h1>
+        <p></p>
+
+        <!-- Resume Upload -->
+        <div class="card">
+            <h2>Upload Resume</h2>
+            <input type="file" id="resumeUpload">
+            <button onclick="uploadResume()">Process Resume</button>
+            <p id="resumeStatus"></p>
+        </div>
+
+        <!-- AI Interview -->
+        <div class="card">
+            <h2>AI Interview</h2>
+            <button onclick="startInterview()">Start Interview</button>
+            <p id="interviewStatus"></p>
+        </div>
+
+        <!-- Candidate Recommendations -->
+        <div class="card">
+            <h2>Candidate Recommendations</h2>
+            <button onclick="fetchCandidates()">View Candidates</button>
+            <ul id="candidateList"></ul>
+        </div>
+    </div>
+    <div class="card">
+        <h2> Thank You </h2>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
